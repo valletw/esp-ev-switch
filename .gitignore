@@ -1,0 +1,3 @@
+*.gbrjob
+kicad/esp-ev-switch-backups
+kicad/*.lck
