@@ -1,10 +1,8 @@
 substitutions:
   hostname: ev-switch
   entity_name: EV Switch
-  voltage_ref: 15873
-  current_ref: 251213
-  power_ref: 596
-  energy_ref: 3304
+  voltage_ref: 45500
+  current_ref: 17500000
 
 esphome:
   name: ${hostname}
@@ -121,7 +119,7 @@ sensor:
       name: ${entity_name} Power
       accuracy_decimals: 2
       filters:
-        multiply: 1
+        multiply: 3.3
     energy:
       name: ${entity_name} Energy
       accuracy_decimals: 2
@@ -130,8 +128,6 @@ sensor:
       accuracy_decimals: 2
     voltage_reference: ${voltage_ref}
     current_reference: ${current_ref}
-    power_reference: ${power_ref}
-    energy_reference: ${energy_ref}
 
 button:
   - platform: restart

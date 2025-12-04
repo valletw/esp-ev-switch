@@ -162,9 +162,88 @@ work. If better accuracy is required, the default value can be changed by follow
 a calibration process:
 
 1. Voltage reference can be adapted by measuring the input voltage with a multimeter,
-2. Current can adapted by using a well known load: example 10 A,
+2. Current can be adapted by using a well known load: example 10 A,
 3. When your voltage/current are correctly calibrated, the power can be computed
-with `P = U * I`,
+with `P = U * I`
+
+#### Voltage reference
+
+The voltage RMS is measured from VP/GND pins connected to a voltage divider bridge.
+The resistors used for the bridge are 1 MOhms (5 * 200k) and 470 Ohms.
+
+At 240V, the expected voltage measure on BL042 should be around 113 mV.
+
+```math
+V = V_{in} * \frac{R2}{R1 + R2}
+```
+
+```math
+V = 240 * \frac{470}{2 * 200 + 470} = 113 mV
+```
+
+From the data sheet, the value of the internal register is compute with the following
+formula:
+
+```math
+V_{RMS} = \frac{73989 * V(mV)}{V_{ref}}
+```
+
+```math
+V_{ref} = 1.218 V
+```
+
+With the previous values (expected voltage and chip voltage) we can estimated the
+voltage reference for the ESPHome configuration:
+
+```math
+Reference = \frac{V_{RMS}}{V_{in}}
+```
+
+```math
+Reference = \frac{\frac{73989 * 113}{1.218}}{240} = 28601
+```
+
+After test on received board, I measured around 180 mV at 240V. So, I can update
+the value for the previous formula to get a new reference value of **45560**. It
+will be used as base to improve accuracy by increasing/decreasing this value and
+measuring the input voltage at the same time.
+
+#### Current reference
+
+**TO UPDATE**
+
+The current RMS is measured from IP/IN pins. Theses pins are connected to a current
+transformer clamp: SCT-013. We can find approximative voltage for a specific current
+measured on this [data sheet](https://uelectronics.com/wp-content/uploads/2019/04/SCT013-050-0-50A-0-1V.pdf).
+
+Current | Voltage
+:------:|:------:
+50 A    | 2 V
+37.5 A  | 1.5 V
+25 A    | 1 V
+12.5 A  | 0.5 V
+
+From the data sheet, the value of the internal register is compute with the following
+formula:
+
+```math
+I_{RMS} = \frac{305978 * I(mV)}{V_{ref}}
+```
+
+```math
+V_{ref} = 1.218 V
+```
+
+With the previous values (expected current and chip voltage) we can estimated the
+current reference for the ESPHome configuration:
+
+```math
+Reference = \frac{I_{RMS}}{I_{in}}
+```
+
+```math
+Reference = \frac{\frac{305978 * 1000}{1.218}}{25} = 10048538
+```
 
 ### ESP32 Pinout
 
