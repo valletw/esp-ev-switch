@@ -94,11 +94,10 @@ switch:
   - platform: template
     name: ${entity_name} Activate
     icon: mdi:ev-station
-    optimistic: true
     lambda: return id(relay_on).state;
-    on_turn_on:
+    turn_on_action:
       - script.execute: ev_start
-    on_turn_off:
+    turn_off_action:
       - script.execute: ev_stop
 
 sensor:
@@ -137,37 +136,51 @@ script:
   - id: ev_start
     mode: single
     then:
-      - lambda: |-
-          unsigned long now = millis();
-          if (now - id(last_toggle_time) < 30000) {
-            ESP_LOGW("EV", "Security delay, wait for start");
-            return;
-          }
-          id(last_toggle_time) = now;
-      - logger.log: "EV start"
-      - output.turn_on: charge_status
-      - switch.turn_on: relay_on
-      - delay: 300ms
-      - switch.turn_on: cp_on
-      - delay: 200ms
-      - switch.turn_on: pp_on
-      - logger.log: "EV ON"
+      - if:
+          condition:
+            lambda: |
+              return !id(ev_stop).is_running()
+                  && (millis() - id(last_toggle_time)) >= 30000;
+          then:
+            - lambda: id(last_toggle_time) = millis();
+            - logger.log: "EV start"
+            - output.turn_on: charge_status
+            - switch.turn_on: relay_on
+            - delay: 300ms
+            - switch.turn_on: cp_on
+            - delay: 200ms
+            - switch.turn_on: pp_on
+            - logger.log: "EV ON"
+          else:
+            - lambda: |
+                if (id(ev_stop).is_running()) {
+                  ESP_LOGW("EV", "EV stop on going, skipped");
+                } else {
+                  ESP_LOGW("EV", "Security delay, start skipped");
+                }
 
   - id: ev_stop
     mode: single
     then:
-      - lambda: |-
-          unsigned long now = millis();
-          if (now - id(last_toggle_time) < 30000) {
-            ESP_LOGW("EV", "Security delay, wait for stop");
-            return;
-          }
-          id(last_toggle_time) = now;
-      - logger.log: "EV stop"
-      - switch.turn_off: pp_on
-      - delay: 5s
-      - switch.turn_off: cp_on
-      - delay: 1s
-      - switch.turn_off: relay_on
-      - output.turn_off: charge_status
-      - logger.log: "EV OFF"
+      - if:
+          condition:
+            lambda: |
+              return !id(ev_start).is_running()
+                  && (millis() - id(last_toggle_time)) >= 30000;
+          then:
+            - lambda: id(last_toggle_time) = millis();
+            - logger.log: "EV stop"
+            - switch.turn_off: pp_on
+            - delay: 5s
+            - switch.turn_off: cp_on
+            - delay: 1s
+            - switch.turn_off: relay_on
+            - output.turn_off: charge_status
+            - logger.log: "EV OFF"
+          else:
+            - lambda: |
+                if (id(ev_start).is_running()) {
+                  ESP_LOGW("EV", "EV start on going, skipped");
+                } else {
+                  ESP_LOGW("EV", "Security delay, stop skipped");
+                }
