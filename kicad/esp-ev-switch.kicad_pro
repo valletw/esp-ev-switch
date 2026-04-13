@@ -101,7 +101,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "warning",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "ignore",
         "skew_out_of_range": "error",
@@ -457,6 +457,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -718,6 +719,18 @@
       {
         "netclass": "5V",
         "pattern": "Net-(D204-A)"
+      },
+      {
+        "netclass": "CT",
+        "pattern": "Net-(R213-Pad1)"
+      },
+      {
+        "netclass": "CT",
+        "pattern": "Net-(U201-VP)"
+      },
+      {
+        "netclass": "230V",
+        "pattern": "Net-(R212-Pad2)"
       }
     ]
   },

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ESP EV Switch")
-		(date "2025-10-07")
-		(rev "1.0.0")
+		(date "2026-04-11")
+		(rev "1.1.0")
 	)
 	(lib_symbols
 		(symbol "BL0942:BL0942"
@@ -1225,144 +1225,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SMF5V0A"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SMF5V0A"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMF"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/doc?85881"
-				(at -1.27 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "200W unidirectional Transil Transient Voltage Suppressor, 5Vrwm, SMF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode TVS voltage suppressor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*SMF*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SMF5V0A_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SMF5V0A_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Relay:G5Q-1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2036,6 +1898,317 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transformer:ZMPT101K"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TR"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ZMPT101K"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Transformer_THT:Transformer_Zeming_ZMPT101K"
+				(at 0 -6.985 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://5krorwxhmqqirik.leadongcdn.com/ZMPT101K+specification-aidikBqoKomRilSkopqmikp.pdf"
+				(at 1.905 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Qingxian Zeming Langxi Electronic ZMPT101K voltage transformer 1000:1000 2mA:2mA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Transformer*ZMPT101K*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ZMPT101K_0_1"
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "ZMPT101K_1_1"
+				(arc
+					(start -1.27 2.54)
+					(mid -0.6377 1.905)
+					(end -1.27 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 1.27)
+					(mid -0.6377 0.635)
+					(end -1.27 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 0)
+					(mid -0.6377 -0.635)
+					(end -1.27 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 -1.27)
+					(mid -0.6377 -1.905)
+					(end -1.27 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.143 1.905)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.254 2.54)
+					(end 0.254 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 1.27 -1.905)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 1.27)
+					(mid 0.6377 1.905)
+					(end 1.27 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 0)
+					(mid 0.6377 0.635)
+					(end 1.27 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 -1.27)
+					(mid 0.6377 -0.635)
+					(end 1.27 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 -2.54)
+					(mid 0.6377 -1.905)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2841,10 +3014,10 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "SCT-013-050\nInternal Rb"
+	(text_box "SCT-013-050\nInternal Rb: ~37 Ohms\nSensitivity: 20 mV/A (1V / 50A)\nCurrent: 1 V / 37 Ohms = 27 mA\nRatio: 1:1852"
 		(exclude_from_sim no)
-		(at 181.61 36.83 0)
-		(size 25.4 6.35)
+		(at 165.1 22.86 0)
+		(size 38.1 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2857,14 +3030,55 @@
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "0b856f52-2992-4525-afd9-0bc71ef95c43")
 	)
+	(text_box "VP: 70 mV RMS, 100 mV Peak-Peak\nTransformer conversion: \n	U_out = (U_in / R_in) * R_out\n* 230 V -> 55 mV (79 %)\n* 260 V -> 62 mV (89 %)"
+		(exclude_from_sim no)
+		(at 165.1 143.51 0)
+		(size 45.72 15.24)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "30b88bc6-8f18-4af7-829d-6cded7e8c2b7")
+	)
+	(text_box "IP/IN: 30 mV RMS, 42 mV Peak-Peak\n\nU_out = (I_in / Ratio) * (Rb * R201) / (Rb + R201)\n* 50 A -> 27 mV (90 %)\n* 32 A -> 17 mV (57 %)\n* 16 A -> 8 mV (27 %)\n* 2 A -> 1 mV (3 %)"
+		(exclude_from_sim no)
+		(at 165.1 50.8 0)
+		(size 57.15 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ce03fd1e-73cd-483b-abbe-4f0170ce01c4")
+	)
 	(junction
-		(at 193.04 128.27)
+		(at 203.2 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "03492e6d-d9ff-401d-b0fe-34b0bb21177b")
+		(uuid "07efdbd3-65f6-4f94-a0a0-7d7675343b1b")
 	)
 	(junction
 		(at 241.3 101.6)
@@ -2891,10 +3105,10 @@
 		(uuid "1e54f47d-4cea-4346-8cd2-a3c88e961f0d")
 	)
 	(junction
-		(at 224.79 44.45)
+		(at 246.38 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "220e8235-592b-4ea3-8983-7264f1210cbe")
+		(uuid "22bb176a-c0ed-4733-b191-a66d9c9ac943")
 	)
 	(junction
 		(at 54.61 161.29)
@@ -2907,12 +3121,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29a8ef1d-9613-49d3-aaab-450ead01203b")
-	)
-	(junction
-		(at 241.3 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e80be8c-2f3b-40a7-964a-7fc5705c7ee3")
 	)
 	(junction
 		(at 134.62 101.6)
@@ -2939,12 +3147,6 @@
 		(uuid "56ce3496-2bd8-48e4-9c25-edc921bbf269")
 	)
 	(junction
-		(at 193.04 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "585f896f-2b03-4f43-bb5d-b3dbb222a300")
-	)
-	(junction
 		(at 101.6 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2957,22 +3159,28 @@
 		(uuid "5b588b8f-ff04-47a3-a51e-507ec16fa369")
 	)
 	(junction
+		(at 224.79 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "607af6bc-1465-4710-8e52-46042d84399e")
+	)
+	(junction
 		(at 43.18 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61d94423-0144-4515-9a2c-29b0971b9bf1")
 	)
 	(junction
-		(at 241.3 44.45)
+		(at 215.9 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6f2c76c8-d42b-4298-90be-b755a4fe0f31")
+		(uuid "6be0c72d-7f47-448a-ac0f-5b16cb5e91e6")
 	)
 	(junction
-		(at 200.66 128.27)
+		(at 251.46 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8188521e-f8cf-482b-9f56-9c3e1e1a1d6d")
+		(uuid "6e733267-7331-42d9-82a6-d25ff4e61aea")
 	)
 	(junction
 		(at 54.61 40.64)
@@ -2987,6 +3195,12 @@
 		(uuid "87eb8285-8ca7-4a4b-aaf1-8a18177793a5")
 	)
 	(junction
+		(at 215.9 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92bdb244-01a4-4d22-87e1-f7c6ac0b1fd4")
+	)
+	(junction
 		(at 54.61 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2999,34 +3213,28 @@
 		(uuid "9d7802d4-abc6-4c4f-be45-fe815ac92291")
 	)
 	(junction
-		(at 213.36 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9de635ce-e858-44d1-870b-3b92b808ad11")
-	)
-	(junction
 		(at 134.62 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a10e5a7f-3d51-4ca1-8e56-e08c841cac34")
 	)
 	(junction
-		(at 213.36 118.11)
+		(at 246.38 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b980d01e-bad8-4ae4-a073-d3ea768c0ec5")
-	)
-	(junction
-		(at 200.66 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c04691c4-5c8e-4a1d-af62-2e8a799b32b0")
+		(uuid "a83b3f5b-946d-47e5-87cb-4ed5ffa8afef")
 	)
 	(junction
 		(at 127 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdac13de-3c88-4986-9a2a-378da20452d8")
+	)
+	(junction
+		(at 224.79 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf59d0af-24ca-49b2-9eab-2d9ac18a9e77")
 	)
 	(junction
 		(at 43.18 46.99)
@@ -3046,6 +3254,12 @@
 		(color 0 0 0 0)
 		(uuid "db4b81b7-ceed-4e67-8b34-43fadc4c0a9d")
 	)
+	(junction
+		(at 203.2 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e807c867-eec8-4f25-9b3e-48a8bda2fa87")
+	)
 	(no_connect
 		(at 96.52 173.99)
 		(uuid "3384e310-a836-4de1-a9fa-b7d37106dbb2")
@@ -3060,17 +3274,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 33.02) (xy 241.3 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00862835-2a04-4f85-859e-5ad8975eed64")
-	)
-	(wire
-		(pts
-			(xy 182.88 99.06) (xy 193.04 99.06)
+			(xy 171.45 99.06) (xy 181.61 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3087,6 +3291,16 @@
 			(type default)
 		)
 		(uuid "0510a617-3842-4593-b253-0a277dc446ff")
+	)
+	(wire
+		(pts
+			(xy 194.31 128.27) (xy 195.58 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "058d7c59-4261-4637-9599-56c8e6fc9e20")
 	)
 	(polyline
 		(pts
@@ -3130,6 +3344,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 54.61) (xy 246.38 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09abdbc2-9b89-48fb-beff-d3272d98f6da")
+	)
+	(wire
+		(pts
 			(xy 219.71 34.29) (xy 224.79 34.29)
 		)
 		(stroke
@@ -3147,16 +3371,6 @@
 			(type default)
 		)
 		(uuid "0d47b22b-e25e-4fdd-b898-15bcd7d4fcef")
-	)
-	(wire
-		(pts
-			(xy 224.79 53.34) (xy 224.79 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ff80068-369a-4641-b972-10b733c47793")
 	)
 	(wire
 		(pts
@@ -3207,6 +3421,16 @@
 			(type default)
 		)
 		(uuid "1409605f-79bd-4ec5-a550-cabeb5915d75")
+	)
+	(wire
+		(pts
+			(xy 246.38 34.29) (xy 246.38 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14446172-92ec-4495-88a8-b15149f53565")
 	)
 	(wire
 		(pts
@@ -3268,16 +3492,6 @@
 		)
 		(uuid "22b6e487-9a75-4eb3-b305-18f7e85c9e44")
 	)
-	(wire
-		(pts
-			(xy 241.3 54.61) (xy 241.3 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22c9bb60-7f9d-4264-8b49-faf50866adca")
-	)
 	(polyline
 		(pts
 			(xy 12.7 76.2) (xy 152.4 76.2)
@@ -3290,7 +3504,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 127) (xy 213.36 128.27)
+			(xy 215.9 129.54) (xy 215.9 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3300,43 +3514,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 116.84) (xy 176.53 118.11)
+			(xy 165.1 116.84) (xy 165.1 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2a2bbe40-f49f-499b-8b90-77e6c80c0724")
-	)
-	(wire
-		(pts
-			(xy 190.5 128.27) (xy 193.04 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c70c083-5dc6-442f-b48e-6cfa8e0a2522")
-	)
-	(wire
-		(pts
-			(xy 241.3 44.45) (xy 224.79 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ca76d46-9b10-41c4-b4be-947e1c41e880")
-	)
-	(wire
-		(pts
-			(xy 213.36 118.11) (xy 223.52 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d4b5cda-330f-4ab4-9453-2a118e1ffd2f")
 	)
 	(wire
 		(pts
@@ -3350,6 +3534,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 123.19) (xy 184.15 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "312f7ba3-4126-4e9c-9070-85ab445db4a1")
+	)
+	(wire
+		(pts
 			(xy 134.62 170.18) (xy 134.62 171.45)
 		)
 		(stroke
@@ -3357,6 +3551,16 @@
 			(type default)
 		)
 		(uuid "35203a76-c67b-48b9-97a9-ef1449067f30")
+	)
+	(wire
+		(pts
+			(xy 224.79 34.29) (xy 231.14 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35d3e8d3-d960-40cb-8309-e78de92819d3")
 	)
 	(wire
 		(pts
@@ -3370,7 +3574,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 128.27) (xy 241.3 129.54)
+			(xy 241.3 128.27) (xy 241.3 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3410,23 +3614,13 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 127) (xy 193.04 128.27)
+			(xy 195.58 123.19) (xy 195.58 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3de66044-b904-4a35-b011-a2d2ee834653")
-	)
-	(wire
-		(pts
-			(xy 193.04 118.11) (xy 193.04 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ff735cb-d1f7-4fb7-b3ae-12617964b113")
+		(uuid "40dc23f9-add1-4039-8096-719a7706a7c4")
 	)
 	(wire
 		(pts
@@ -3450,6 +3644,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 120.65) (xy 203.2 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4770093a-f4be-426f-a741-180b9dc8aced")
+	)
+	(wire
+		(pts
 			(xy 254 120.65) (xy 256.54 120.65)
 		)
 		(stroke
@@ -3467,16 +3671,6 @@
 			(type default)
 		)
 		(uuid "48dbf045-a798-4297-85d0-34cb7854c54d")
-	)
-	(wire
-		(pts
-			(xy 213.36 128.27) (xy 226.06 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b04aabe-62a2-4132-b99e-eaa5a4c391af")
 	)
 	(wire
 		(pts
@@ -3520,7 +3714,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 118.11) (xy 182.88 99.06)
+			(xy 171.45 118.11) (xy 171.45 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3570,7 +3764,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 128.27) (xy 213.36 128.27)
+			(xy 203.2 130.81) (xy 215.9 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3620,23 +3814,13 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 118.11) (xy 213.36 119.38)
+			(xy 215.9 120.65) (xy 215.9 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "674ea384-f6b1-4e87-a552-f996ef590241")
-	)
-	(wire
-		(pts
-			(xy 226.06 118.11) (xy 228.6 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "692516e1-6048-4277-80a1-8e7f4de48f1a")
 	)
 	(wire
 		(pts
@@ -3650,7 +3834,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 99.06) (xy 193.04 100.33)
+			(xy 181.61 99.06) (xy 181.61 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3690,13 +3874,13 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 53.34) (xy 241.3 54.61)
+			(xy 177.8 128.27) (xy 184.15 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "719ee044-52ff-45f4-8fd6-5a234ca8678e")
+		(uuid "718b8e1d-e42a-4e9b-836d-53523cb4bd4e")
 	)
 	(wire
 		(pts
@@ -3750,6 +3934,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 130.81) (xy 203.2 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0ee6a2-0110-4bf4-b272-9ccc1aa00b4f")
+	)
+	(wire
+		(pts
 			(xy 101.6 57.15) (xy 101.6 58.42)
 		)
 		(stroke
@@ -3777,6 +3971,16 @@
 			(type default)
 		)
 		(uuid "8702c7f6-dd02-4645-9e26-e256e19d6f34")
+	)
+	(wire
+		(pts
+			(xy 238.76 44.45) (xy 251.46 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89b53364-c2b3-459d-ab32-c8d5f95f9d58")
 	)
 	(wire
 		(pts
@@ -3840,6 +4044,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 120.65) (xy 228.6 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95b35d62-2a01-4048-8d44-9b35c434bb25")
+	)
+	(wire
+		(pts
 			(xy 254 118.11) (xy 256.54 118.11)
 		)
 		(stroke
@@ -3850,7 +4064,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 118.11) (xy 210.82 118.11)
+			(xy 215.9 120.65) (xy 213.36 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3880,23 +4094,13 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 43.18) (xy 241.3 44.45)
+			(xy 181.61 116.84) (xy 181.61 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0cd4519-541a-48fc-ac39-54e306e32a62")
-	)
-	(wire
-		(pts
-			(xy 223.52 120.65) (xy 223.52 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1267c84-c87b-4c07-bb9c-886d1405a0b1")
+		(uuid "a0f3f276-e341-4657-974d-91ce3d12b877")
 	)
 	(wire
 		(pts
@@ -3910,6 +4114,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 128.27) (xy 195.58 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ea4a6f-929a-4533-bc5b-8556037b0b63")
+	)
+	(wire
+		(pts
 			(xy 101.6 58.42) (xy 104.14 58.42)
 		)
 		(stroke
@@ -3920,7 +4134,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 118.11) (xy 200.66 118.11)
+			(xy 205.74 120.65) (xy 203.2 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3940,23 +4154,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 107.95) (xy 176.53 109.22)
+			(xy 165.1 107.95) (xy 165.1 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ac2801bf-d262-4057-81aa-4747c34b30e0")
-	)
-	(wire
-		(pts
-			(xy 241.3 45.72) (xy 241.3 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adb90470-c82b-4140-9b93-bc9098a9eb0d")
 	)
 	(wire
 		(pts
@@ -3980,6 +4184,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 44.45) (xy 251.46 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4401215-dd90-4ec2-8756-3f23ed92d5e1")
+	)
+	(wire
+		(pts
 			(xy 43.18 46.99) (xy 43.18 48.26)
 		)
 		(stroke
@@ -3990,17 +4204,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 44.45) (xy 224.79 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b637b91a-959c-4ed0-9acc-303ff16a5062")
-	)
-	(wire
-		(pts
-			(xy 200.66 118.11) (xy 200.66 119.38)
+			(xy 203.2 120.65) (xy 203.2 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4010,7 +4214,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 127) (xy 200.66 128.27)
+			(xy 203.2 129.54) (xy 203.2 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4020,7 +4224,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 123.19) (xy 264.16 129.54)
+			(xy 264.16 123.19) (xy 264.16 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4040,7 +4244,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 118.11) (xy 182.88 118.11)
+			(xy 165.1 118.11) (xy 171.45 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4050,13 +4254,13 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 128.27) (xy 200.66 128.27)
+			(xy 194.31 123.19) (xy 195.58 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c581b858-d4c1-45a0-99ac-765bf8346636")
+		(uuid "c2432adf-a93a-47d7-b50e-b1cbe73bdf46")
 	)
 	(wire
 		(pts
@@ -4087,16 +4291,6 @@
 			(type default)
 		)
 		(uuid "cb1f0f4f-4888-4eac-8234-4a5c7e399efa")
-	)
-	(wire
-		(pts
-			(xy 224.79 54.61) (xy 241.3 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc29b383-7d0d-4925-ba83-e62976559f8c")
 	)
 	(wire
 		(pts
@@ -4150,6 +4344,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 130.81) (xy 215.9 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d34ccd16-9e92-49c6-867d-7f291abdbe8d")
+	)
+	(wire
+		(pts
 			(xy 134.62 30.48) (xy 134.62 40.64)
 		)
 		(stroke
@@ -4160,23 +4364,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 118.11) (xy 193.04 118.11)
+			(xy 224.79 44.45) (xy 231.14 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0ea4c84-0c91-41b1-8345-1f175af2a9d1")
-	)
-	(wire
-		(pts
-			(xy 193.04 116.84) (xy 193.04 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e158ccdf-9b28-4ba8-96cf-19a061a63b98")
+		(uuid "da3d4d32-d718-4974-b9eb-147e216d2846")
 	)
 	(wire
 		(pts
@@ -4197,16 +4391,6 @@
 			(type default)
 		)
 		(uuid "e27f4d03-f8ce-4d21-b7cb-c4a2e2bfad49")
-	)
-	(wire
-		(pts
-			(xy 228.6 120.65) (xy 223.52 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e400d83a-8aee-4ad8-a78e-b911b08b30b1")
 	)
 	(wire
 		(pts
@@ -4250,6 +4434,26 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 54.61) (xy 251.46 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7dd7766-73cb-476d-a651-0d7d783942a7")
+	)
+	(wire
+		(pts
+			(xy 223.52 118.11) (xy 228.6 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7ec6258-65ff-4ec5-8069-9240eceedc90")
+	)
+	(wire
+		(pts
 			(xy 96.52 40.64) (xy 127 40.64)
 		)
 		(stroke
@@ -4257,6 +4461,16 @@
 			(type default)
 		)
 		(uuid "e8e27af5-ca99-4d39-9591-b1738716fc24")
+	)
+	(wire
+		(pts
+			(xy 246.38 43.18) (xy 246.38 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9d74746-dc8d-4550-8a59-b29d7bc63696")
 	)
 	(wire
 		(pts
@@ -4290,6 +4504,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 34.29) (xy 246.38 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecc06f10-637d-429d-acea-447485e1a2f8")
+	)
+	(wire
+		(pts
 			(xy 54.61 160.02) (xy 54.61 161.29)
 		)
 		(stroke
@@ -4297,6 +4521,36 @@
 			(type default)
 		)
 		(uuid "ece681f3-621c-43c4-a270-92fff02ee309")
+	)
+	(wire
+		(pts
+			(xy 246.38 34.29) (xy 262.89 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edaa1d95-666e-4ec7-84cb-70572e0a981d")
+	)
+	(wire
+		(pts
+			(xy 251.46 53.34) (xy 251.46 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f379e453-81c4-4c52-94ad-1cf4d1f97724")
+	)
+	(wire
+		(pts
+			(xy 251.46 44.45) (xy 262.89 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f65105b9-d5ba-4b39-86a5-f6a2d5a267d2")
 	)
 	(wire
 		(pts
@@ -4310,7 +4564,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 99.06) (xy 176.53 100.33)
+			(xy 165.1 99.06) (xy 165.1 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4340,17 +4594,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 128.27) (xy 226.06 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fba4931b-04ac-4ff4-a6b0-5430530c4384")
-	)
-	(wire
-		(pts
-			(xy 176.53 88.9) (xy 176.53 91.44)
+			(xy 165.1 88.9) (xy 165.1 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4370,13 +4614,53 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 107.95) (xy 193.04 109.22)
+			(xy 181.61 107.95) (xy 181.61 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "feecd46f-1505-4539-93a0-e19a0df087da")
+	)
+	(label "IP"
+		(at 223.52 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1feab8e9-c840-4f25-86d6-b78583417069")
+	)
+	(label "IN"
+		(at 223.52 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b604eb4-0a70-4d46-a482-23cedcc98cb6")
+	)
+	(label "IP"
+		(at 262.89 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6440da20-4c97-4352-94c4-547a299e70c7")
+	)
+	(label "IN"
+		(at 262.89 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6794fec2-12b8-465e-a087-9d210fa3515d")
 	)
 	(hierarchical_label "RELAY_OUT"
 		(shape output)
@@ -4455,17 +4739,6 @@
 		)
 		(uuid "7055423f-6733-480e-b22f-fd8c3f8bb211")
 	)
-	(hierarchical_label "CT_L"
-		(shape bidirectional)
-		(at 223.52 115.57 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7a53ea00-6667-48d3-b4a3-4f112e60fbb9")
-	)
 	(hierarchical_label "CF1"
 		(shape output)
 		(at 256.54 113.03 0)
@@ -4542,6 +4815,102 @@
 			(justify right)
 		)
 		(uuid "c3a74342-2371-4401-a9c3-d8929ab95bdf")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165.1 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "018f4ec7-12a2-49b8-8730-e1bcb0cfbebc")
+		(property "Reference" "R207"
+			(at 158.242 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47k"
+			(at 158.242 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 163.322 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706600757919744"
+			(at 165.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 165.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17713"
+			(at 165.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 165.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "0805W8F4702T5E"
+			(at 165.1 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "91ca7451-c2c2-4a92-98ae-6804a651c6bd")
+		)
+		(pin "1"
+			(uuid "f660027b-75d3-45cc-ae15-dbb257e8dac3")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "R207")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Relay:G5V-1")
@@ -4832,26 +5201,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:NEUT")
-		(at 190.5 128.27 90)
+		(lib_id "Device:C")
+		(at 215.9 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1377072d-72c2-48c9-ae44-58a574c3f501")
-		(property "Reference" "#PWR0214"
-			(at 194.31 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "NEUT"
-			(at 186.69 128.2699 90)
+		(uuid "0ea2947d-91a7-4e13-b654-d9a04852b076")
+		(property "Reference" "C207"
+			(at 219.71 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4859,8 +5219,17 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 190.5 128.27 0)
+		(property "Value" "33n"
+			(at 219.71 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 216.8652 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4868,8 +5237,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 190.5 128.27 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707112405909504"
+			(at 215.9 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4877,22 +5246,52 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"NEUT\""
-			(at 190.5 128.27 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 215.9 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "LCSC Part #" "C21117"
+			(at 215.9 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 215.9 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "CL10B333KB8NNNC"
+			(at 215.9 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2f32ae86-c3b7-40d9-8e88-3e4d1e0da54f")
 		)
 		(pin "1"
-			(uuid "61b0b673-6449-4c27-964f-a155a06eff74")
+			(uuid "1f05794b-7898-4b09-a10c-fce8c42c3a67")
 		)
 		(instances
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "#PWR0214")
+					(reference "C207")
 					(unit 1)
 				)
 			)
@@ -4995,6 +5394,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 251.46 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16c4d766-84a6-4e94-adbf-ecc95c4523c9")
+		(property "Reference" "C203"
+			(at 255.27 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33n"
+			(at 255.27 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 252.4252 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707112405909504"
+			(at 251.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 251.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21117"
+			(at 251.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 251.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "CL10B333KB8NNNC"
+			(at 251.46 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a10e20a2-c8c7-4afb-bec7-af73e40994d9")
+		)
+		(pin "1"
+			(uuid "ac73437d-3ae3-44b1-b8cf-749c51e782ab")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "C203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 127 45.72 0)
 		(unit 1)
@@ -5085,103 +5581,6 @@
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
 					(reference "C201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 241.3 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "241b61bc-be67-4ea3-9bcb-046c61442283")
-		(property "Reference" "R204"
-			(at 243.84 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 243.84 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 239.522 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706350726930432"
-			(at 241.3 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 241.3 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C25803"
-			(at 241.3 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 241.3 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "0603WAF1003T5E"
-			(at 241.3 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85e57573-5b76-4586-8dd0-25de5fdb5750")
-		)
-		(pin "2"
-			(uuid "0409704a-2825-48bd-8e05-6da51e7f0039")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -5422,7 +5821,7 @@
 	)
 	(symbol
 		(lib_id "power:HT")
-		(at 176.53 88.9 0)
+		(at 165.1 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5431,7 +5830,7 @@
 		(fields_autoplaced yes)
 		(uuid "29f1f208-e11b-4821-a968-bcb9ba7205c0")
 		(property "Reference" "#PWR0208"
-			(at 176.53 92.71 0)
+			(at 165.1 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5440,7 +5839,7 @@
 			)
 		)
 		(property "Value" "HT"
-			(at 176.53 85.09 0)
+			(at 165.1 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5847,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 88.9 0)
+			(at 165.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5457,7 +5856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 88.9 0)
+			(at 165.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5466,7 +5865,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"HT\""
-			(at 176.53 88.9 0)
+			(at 165.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5577,103 +5976,6 @@
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
 					(reference "C206")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 241.3 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f845333-f4fa-478c-9e79-8025e1a7527e")
-		(property "Reference" "R202"
-			(at 243.84 38.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 243.84 40.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 239.522 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706350726930432"
-			(at 241.3 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 241.3 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C25803"
-			(at 241.3 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 241.3 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "0603WAF1003T5E"
-			(at 241.3 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "281c060d-acfb-48b1-b3ae-fc1316e8d1fb")
-		)
-		(pin "2"
-			(uuid "c11d7b96-ef5b-4c3f-b5ee-11594294295f")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -5844,7 +6146,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 193.04 123.19 0)
+		(at 203.2 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5852,7 +6154,7 @@
 		(dnp no)
 		(uuid "3683bea5-2851-4850-a148-2bfa584457ae")
 		(property "Reference" "R214"
-			(at 186.182 121.92 0)
+			(at 196.342 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5860,8 +6162,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470"
-			(at 186.182 124.46 0)
+		(property "Value" "56"
+			(at 196.342 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5869,8 +6171,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 191.262 123.19 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 201.422 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5878,8 +6180,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706597980880896"
-			(at 193.04 123.19 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706345047707648"
+			(at 203.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5888,7 +6190,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 193.04 123.19 0)
+			(at 203.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5896,8 +6198,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17710"
-			(at 193.04 123.19 0)
+		(property "LCSC Part #" "C25196"
+			(at 203.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5906,7 +6208,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 193.04 123.19 0)
+			(at 203.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5914,8 +6216,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFR Part #" "0805W8F4700T5E"
-			(at 193.04 123.19 0)
+		(property "MFR Part #" "0603WAF560JT5E"
+			(at 203.2 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5999,199 +6301,6 @@
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
 					(reference "#PWR0218")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 200.66 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41bec684-3a0b-43b6-8b33-2513c8193d54")
-		(property "Reference" "C207"
-			(at 204.47 121.9199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 204.47 124.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 201.6252 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706882463744000"
-			(at 200.66 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 200.66 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C49678"
-			(at 200.66 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 200.66 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "CC0805KRX7R9BB104"
-			(at 200.66 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "53fff4c9-1ccc-4f03-9435-6e77a484281b")
-		)
-		(pin "1"
-			(uuid "4ce2fde3-d7db-4dea-9c31-22c6797f1d1f")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "C207")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 176.53 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "427dac0e-604d-435b-9a39-535da64eeeb2")
-		(property "Reference" "R211"
-			(at 169.672 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "200k"
-			(at 169.672 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 174.752 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706517206974464"
-			(at 176.53 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 176.53 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C17539"
-			(at 176.53 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 176.53 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "0805W8F2003T5E"
-			(at 176.53 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "79bb3277-c474-45cf-8f7c-79ad5decf888")
-		)
-		(pin "1"
-			(uuid "0bfdfe1d-ad66-4776-97c3-417c06387fca")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "R211")
 					(unit 1)
 				)
 			)
@@ -6474,7 +6583,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 129.54 0)
+		(at 264.16 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6483,7 +6592,7 @@
 		(fields_autoplaced yes)
 		(uuid "550e1c6b-a924-4466-baab-01fa366a5f91")
 		(property "Reference" "#PWR0216"
-			(at 264.16 135.89 0)
+			(at 264.16 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6492,7 +6601,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 264.16 134.62 0)
+			(at 264.16 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +6609,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 129.54 0)
+			(at 264.16 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 129.54 0)
+			(at 264.16 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6518,7 +6627,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 264.16 129.54 0)
+			(at 264.16 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6701,102 +6810,6 @@
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
 					(reference "Q202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 224.79 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b705d7f-c7bd-4126-a4af-1863f30f3720")
-		(property "Reference" "C203"
-			(at 228.6 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 228.6 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 225.7552 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
-			(at 224.79 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 224.79 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C96446"
-			(at 224.79 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "CL10A106MA8NRNC"
-			(at 224.79 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9a750f4d-ca04-45aa-a53d-f24d104d698b")
-		)
-		(pin "2"
-			(uuid "98d94045-ae9e-47e3-9eb2-46d149641b2d")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -7081,102 +7094,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SMF5V0A")
-		(at 213.36 123.19 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7a277a18-7442-48d8-90a8-8ef882b25cf3")
-		(property "Reference" "D203"
-			(at 223.52 124.206 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SMF5.0A"
-			(at 223.52 122.174 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 213.36 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8564880887079854080"
-			(at 213.36 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 213.36 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "hongjiacheng"
-			(at 213.36 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C19077497"
-			(at 213.36 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "SMF5.0A"
-			(at 213.36 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1eaabaf4-2e9d-4e11-8061-4bf029e7948b")
-		)
-		(pin "2"
-			(uuid "f86d5411-319f-4b4b-a24e-3a43c20144ab")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "D203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 134.62 58.42 0)
 		(unit 1)
@@ -7308,7 +7225,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 176.53 95.25 0)
+		(at 165.1 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7316,7 +7233,7 @@
 		(dnp no)
 		(uuid "8ae0532a-9575-4ac4-82d2-1d03861759a7")
 		(property "Reference" "R206"
-			(at 169.672 93.98 0)
+			(at 158.242 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7324,8 +7241,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200k"
-			(at 169.672 96.52 0)
+		(property "Value" "47k"
+			(at 158.242 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7334,7 +7251,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 174.752 95.25 90)
+			(at 163.322 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7342,8 +7259,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706517206974464"
-			(at 176.53 95.25 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706600757919744"
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7352,7 +7269,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 176.53 95.25 0)
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7360,8 +7277,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17539"
-			(at 176.53 95.25 0)
+		(property "LCSC Part #" "C17713"
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7370,7 +7287,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 176.53 95.25 0)
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7378,8 +7295,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFR Part #" "0805W8F2003T5E"
-			(at 176.53 95.25 0)
+		(property "MFR Part #" "0805W8F4702T5E"
+			(at 165.1 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7397,6 +7314,167 @@
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
 					(reference "R206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c562523-bb43-470d-965d-52c63873bdb9")
+		(property "Reference" "#PWR0203"
+			(at 246.38 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dfab2286-27c3-4e39-8b59-50d9f23e87f7")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "#PWR0203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 234.95 44.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d2ddddf-a706-43ee-8ef8-fced0193fc23")
+		(property "Reference" "R204"
+			(at 232.664 49.022 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 233.934 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 234.95 42.672 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
+			(at 234.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 234.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 234.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 234.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "0603WAF1001T5E"
+			(at 234.95 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c220d62c-b80b-4d89-b950-4f857aa4d0f7")
+		)
+		(pin "1"
+			(uuid "9a2707c7-6a76-4b80-8804-186163eaab6b")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -7462,6 +7540,103 @@
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
 					(reference "#PWR0213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 246.38 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f99efe3-4102-4b6c-95d8-9e0d121064e8")
+		(property "Reference" "C210"
+			(at 250.19 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33n"
+			(at 250.19 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 247.3452 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707112405909504"
+			(at 246.38 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 246.38 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21117"
+			(at 246.38 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 246.38 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "CL10B333KB8NNNC"
+			(at 246.38 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2a7232a5-132d-4a6a-ae25-f9a2f49d0183")
+		)
+		(pin "1"
+			(uuid "136ce71d-81fe-4e59-b535-8a321bf78e64")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "C210")
 					(unit 1)
 				)
 			)
@@ -7661,6 +7836,174 @@
 		)
 	)
 	(symbol
+		(lib_id "Transformer:ZMPT101K")
+		(at 189.23 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9565b46-d0d1-4f44-80d8-a04a346257db")
+		(property "Reference" "TR201"
+			(at 189.23 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ZMPT107-1"
+			(at 189.23 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:XFMR-TH_ZMPT107-1"
+			(at 189.23 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588892594063073280"
+			(at 191.135 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Qingxian Zeming Langxi Electronic ZMPT107-1 voltage transformer 1:1 2mA:2mA"
+			(at 189.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C125191"
+			(at 189.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ZHE MING LANG XI"
+			(at 189.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "ZMPT107-1"
+			(at 189.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d5b72a88-26d0-4e77-8f5c-33e5945eca8a")
+		)
+		(pin "4"
+			(uuid "3c532bf3-b6a8-46d9-906d-38c74f514b8a")
+		)
+		(pin "1"
+			(uuid "a7df5203-1850-41dc-a4b0-ea78412580b9")
+		)
+		(pin "2"
+			(uuid "5b002baf-eae0-4e90-b966-63b797eebfaf")
+		)
+		(instances
+			(project ""
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "TR201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:NEUT")
+		(at 177.8 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aaa3d405-25f6-478f-a5a2-7f042d9e8912")
+		(property "Reference" "#PWR0214"
+			(at 181.61 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "NEUT"
+			(at 173.99 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"NEUT\""
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4629362-d64d-40a0-b9a5-b6e151c90fb2")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "#PWR0214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 54.61 179.07 0)
 		(unit 1)
@@ -7824,15 +8167,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 176.53 104.14 0)
+		(at 181.61 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b49ffa4f-3878-484b-9891-f643e7c2f820")
-		(property "Reference" "R207"
-			(at 169.672 102.87 0)
+		(uuid "b6d6eb85-d1c5-4ebc-b7fc-acecce5436ec")
+		(property "Reference" "R208"
+			(at 174.752 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7840,8 +8183,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200k"
-			(at 169.672 105.41 0)
+		(property "Value" "47k"
+			(at 174.752 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7850,7 +8193,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 174.752 104.14 90)
+			(at 179.832 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7858,8 +8201,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706517206974464"
-			(at 176.53 104.14 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706600757919744"
+			(at 181.61 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7868,7 +8211,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 176.53 104.14 0)
+			(at 181.61 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7876,8 +8219,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17539"
-			(at 176.53 104.14 0)
+		(property "LCSC Part #" "C17713"
+			(at 181.61 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7886,7 +8229,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 176.53 104.14 0)
+			(at 181.61 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7894,8 +8237,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFR Part #" "0805W8F2003T5E"
-			(at 176.53 104.14 0)
+		(property "MFR Part #" "0805W8F4702T5E"
+			(at 181.61 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7904,15 +8247,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "d2b49694-4d54-4b61-89a2-17e16bad1047")
+			(uuid "3b591b8a-966b-402e-ba80-5e6338581a2b")
 		)
 		(pin "1"
-			(uuid "c48e92b7-3f60-4c37-8fe2-6e6d0ddb6b7b")
+			(uuid "e34af25c-89cc-434d-8845-fda68e1a673f")
 		)
 		(instances
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "R207")
+					(reference "R208")
 					(unit 1)
 				)
 			)
@@ -8188,7 +8531,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 241.3 129.54 0)
+		(at 241.3 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8197,7 +8540,7 @@
 		(fields_autoplaced yes)
 		(uuid "c27884f3-158d-4503-ba19-4bd7f9e7305c")
 		(property "Reference" "#PWR0215"
-			(at 241.3 135.89 0)
+			(at 241.3 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8206,7 +8549,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 241.3 134.62 0)
+			(at 241.3 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8214,7 +8557,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 129.54 0)
+			(at 241.3 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8223,7 +8566,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 129.54 0)
+			(at 241.3 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8232,7 +8575,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 241.3 129.54 0)
+			(at 241.3 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8253,15 +8596,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 193.04 113.03 0)
+		(at 234.95 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d6cd1cab-b56c-466d-a733-2ef50155dccb")
-		(property "Reference" "R212"
-			(at 186.182 111.76 0)
+		(uuid "c3f1ef32-c5af-4a92-b3dc-2c00fefe2623")
+		(property "Reference" "R202"
+			(at 237.236 29.718 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8269,8 +8612,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200k"
-			(at 186.182 114.3 0)
+		(property "Value" "1k"
+			(at 235.966 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8278,8 +8621,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 191.262 113.03 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 234.95 36.068 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,8 +8630,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706517206974464"
-			(at 193.04 113.03 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
+			(at 234.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8297,7 +8640,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 193.04 113.03 0)
+			(at 234.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8305,8 +8648,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17539"
-			(at 193.04 113.03 0)
+		(property "LCSC Part #" "C21190"
+			(at 234.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8315,7 +8658,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 193.04 113.03 0)
+			(at 234.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8323,8 +8666,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFR Part #" "0805W8F2003T5E"
-			(at 193.04 113.03 0)
+		(property "MFR Part #" "0603WAF1001T5E"
+			(at 234.95 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8333,10 +8676,267 @@
 			)
 		)
 		(pin "2"
-			(uuid "f40c2843-8ac7-4999-891b-e40cb66004b2")
+			(uuid "06f6fb79-1cc2-4c5f-b692-db3f91ee46ce")
 		)
 		(pin "1"
-			(uuid "a9dda195-47e1-425d-bb26-8160e73cae6b")
+			(uuid "43daeb5d-cacc-4d33-8f94-3d53dbf3252a")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "R202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c537913c-b444-4a6d-af3e-c4cae4133617")
+		(property "Reference" "#PWR0204"
+			(at 215.9 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0320029e-8bd5-4981-aded-1bfecd99ab3f")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "#PWR0204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 209.55 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d399ad01-63b8-49f8-9f87-77ed6ef140c2")
+		(property "Reference" "R213"
+			(at 211.836 116.078 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 210.566 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 209.55 122.428 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706098733010944"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "0603WAF1001T5E"
+			(at 209.55 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e714add-c9f2-46c0-8e6b-15a50bd381d2")
+		)
+		(pin "1"
+			(uuid "acf62795-1bbd-4c31-a84f-b1840764a422")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
+					(reference "R213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 181.61 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8873357-6494-42f7-80f1-699efc8bb574")
+		(property "Reference" "R212"
+			(at 174.752 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47k"
+			(at 174.752 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 179.832 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706600757919744"
+			(at 181.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C17713"
+			(at 181.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 181.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "0805W8F4702T5E"
+			(at 181.61 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "34127971-04ff-4e87-961d-bb365da8beca")
+		)
+		(pin "1"
+			(uuid "22344bea-5958-4561-81ba-c3c1fc0e8ea9")
 		)
 		(instances
 			(project "esp-ev-switch"
@@ -8544,7 +9144,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc84c23c-eb69-4af3-89a2-f28dfcc9b49c")
 		(property "Reference" "R201"
@@ -8556,7 +9156,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33"
+		(property "Value" "1"
 			(at 227.33 40.6399 0)
 			(effects
 				(font
@@ -8565,7 +9165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 223.012 39.37 90)
 			(effects
 				(font
@@ -8574,7 +9174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706226143518720"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706155561910272"
 			(at 224.79 39.37 0)
 			(effects
 				(font
@@ -8592,7 +9192,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17634"
+		(property "LCSC Part #" "C22936"
 			(at 224.79 39.37 0)
 			(effects
 				(font
@@ -8610,7 +9210,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR Part #" "0805W8F330JT5E"
+		(property "MFR Part #" "0603WAF100KT5E"
 			(at 224.79 39.37 0)
 			(effects
 				(font
@@ -8970,71 +9570,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 241.3 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f22445c6-6b8e-4c9c-83a8-cdf9e3225f47")
-		(property "Reference" "#PWR0203"
-			(at 241.3 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 241.3 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fdb04e65-a91e-4315-b99d-7cc648ab6911")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "#PWR0203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 134.62 166.37 0)
 		(unit 1)
@@ -9125,102 +9660,6 @@
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
 					(reference "C209")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 207.01 118.11 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fa78df3a-ceac-42bb-aa93-ca9f5628338e")
-		(property "Reference" "R213"
-			(at 205.486 116.078 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 208.026 116.078 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 207.01 119.888 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706499683172352"
-			(at 207.01 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 207.01 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C17513"
-			(at 207.01 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 207.01 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "0805W8F1001T5E"
-			(at 207.01 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6650a359-4634-43f5-a94a-c15913a4c7e6")
-		)
-		(pin "1"
-			(uuid "2323e66c-f711-4dab-bb3e-3fff65152491")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "R213")
 					(unit 1)
 				)
 			)
@@ -9324,15 +9763,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 193.04 104.14 0)
+		(at 165.1 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fcd13a56-4376-4d14-8e49-912ca626cbed")
-		(property "Reference" "R208"
-			(at 186.182 102.87 0)
+		(uuid "fe7c4d83-30ca-41dd-a7e1-1221dc0861de")
+		(property "Reference" "R211"
+			(at 158.242 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9340,8 +9779,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200k"
-			(at 186.182 105.41 0)
+		(property "Value" "47k"
+			(at 158.242 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9350,7 +9789,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 191.262 104.14 90)
+			(at 163.322 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9358,8 +9797,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706517206974464"
-			(at 193.04 104.14 0)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706600757919744"
+			(at 165.1 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9368,7 +9807,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 193.04 104.14 0)
+			(at 165.1 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9376,8 +9815,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C17539"
-			(at 193.04 104.14 0)
+		(property "LCSC Part #" "C17713"
+			(at 165.1 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9386,7 +9825,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 193.04 104.14 0)
+			(at 165.1 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9394,8 +9833,8 @@
 				(hide yes)
 			)
 		)
-		(property "MFR Part #" "0805W8F2003T5E"
-			(at 193.04 104.14 0)
+		(property "MFR Part #" "0805W8F4702T5E"
+			(at 165.1 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9404,80 +9843,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "1ac38b2c-0a4b-4cf7-80f6-8cfb172c8d98")
+			(uuid "ab7f7516-673b-4b5c-a218-86dae2df6ddc")
 		)
 		(pin "1"
-			(uuid "665483ee-523c-48b5-af5c-d85936a1a59c")
+			(uuid "39cebf63-b6c7-4d10-998d-ba982d88a39f")
 		)
 		(instances
 			(project "esp-ev-switch"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "R208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 241.3 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd563b23-5173-47c3-b05b-bb1712e98901")
-		(property "Reference" "#PWR0204"
-			(at 241.3 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 241.3 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "31b45e1a-885d-490e-91fb-8c62d070d1ac")
-		)
-		(instances
-			(project "esp-ev-switch"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6/f84bd9dc-5b87-4311-a43a-22a81ae21676"
-					(reference "#PWR0204")
+					(reference "R211")
 					(unit 1)
 				)
 			)

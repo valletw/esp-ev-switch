@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ESP EV Switch")
-		(date "2025-10-07")
-		(rev "1.0.0")
+		(date "2026-04-11")
+		(rev "1.1.0")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_ARM_JTAG_SWD_10"
@@ -9316,103 +9316,6 @@
 		(uuid "fa9b81c4-5261-4f67-b803-c59bfa7bd1b6")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 25.4 125.73 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01d5bfed-431d-430f-8c79-25418eb4ec0a")
-		(property "Reference" "C109"
-			(at 17.272 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 17.272 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 24.4348 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf"
-			(at 25.4 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 25.4 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C52923"
-			(at 25.4 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR Part #" "CL05A105KA5NQNC"
-			(at 25.4 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4e556a0-c1d1-48aa-8823-4f0fd840ab70")
-		)
-		(pin "2"
-			(uuid "9e2d0d7d-66b6-4f13-8f24-4dbf0c6711e1")
-		)
-		(instances
-			(project "esp-atx-power"
-				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6"
-					(reference "C109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 246.38 60.96 0)
 		(unit 1)
@@ -14935,6 +14838,102 @@
 			(project "esp-atx-power"
 				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6"
 					(reference "MH102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 25.4 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc0071fc-cf99-4f29-8bab-ac7bd5b77e2e")
+		(property "Reference" "C109"
+			(at 29.21 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 29.21 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 26.3652 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf"
+			(at 25.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 25.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C96446"
+			(at 25.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR Part #" "CL10A106MA8NRNC"
+			(at 25.4 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b755138-6d21-4bc9-9498-198e41f1cea4")
+		)
+		(pin "2"
+			(uuid "9cf1c691-0cb5-4a78-8ea3-735ed0859921")
+		)
+		(instances
+			(project "esp-ev-switch"
+				(path "/0502a6a9-5fe6-43a5-b6f7-3b5176fd87b6"
+					(reference "C109")
 					(unit 1)
 				)
 			)
