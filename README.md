@@ -168,82 +168,138 @@ with `P = U * I`
 
 #### Voltage reference
 
-The voltage RMS is measured from VP/GND pins connected to a voltage divider bridge.
-The resistors used for the bridge are 1 MOhms (5 * 200k) and 470 Ohms.
+The voltage RMS is measured from VP/GND pins connected through a voltage transformer
+for galvanic isolation. The primary side uses a resistive divider 235 kOhms (5 * 47k)
+to limit the current through the transformer primary. On the secondary side, a 56 Ohms
+resistor sets the output voltage, followed by a 1 kOhms series resistor on the VP pin
+for protection.
 
-At 240V, the expected voltage measure on BL042 should be around 113 mV.
+The transformer is designed as a current source: the primary voltage drives a current
+through R_in, which is then converted back to a voltage across R_out on the secondary:
 
 ```math
-V = V_{in} * \frac{R2}{R1 + R2}
+U_{out} = \frac{U_{in}}{R_{in}} \times R_{out}
 ```
 
 ```math
-V = 240 * \frac{470}{2 * 200 + 470} = 113 mV
+U_{out} = \frac{230}{235000} \times 56 = 54.8 mV
 ```
 
-From the data sheet, the value of the internal register is compute with the following
-formula:
+The BL0942 VP input full-scale is 70 mV RMS / 100 mV peak-to-peak. The operating
+points relative to full-scale are:
+
+Input voltage | VP voltage | % of full-scale
+:------------:|:----------:|:---------------:
+230 V         | 54.8 mV    | 78 %
+260 V         | 61.9 mV    | 88 %
+
+From the datasheet, the internal register value is computed with the following formula:
 
 ```math
-V_{RMS} = \frac{73989 * V(mV)}{V_{ref}}
+V_{RMS} = \frac{73989 \times V(mV)}{V_{ref}}
 ```
 
 ```math
 V_{ref} = 1.218 V
 ```
 
-With the previous values (expected voltage and chip voltage) we can estimated the
-voltage reference for the ESPHome configuration:
+With the previous values (expected VP voltage and chip reference voltage) we can
+estimate the voltage reference for the ESPHome configuration:
 
 ```math
 Reference = \frac{V_{RMS}}{V_{in}}
 ```
 
 ```math
-Reference = \frac{\frac{73989 * 113}{1.218}}{240} = 28601
+Reference = \frac{\frac{73989 \times 54.8}{1.218}}{230} = 14477
 ```
 
-After test on received board, I measured around 180 mV at 240V. So, I can update
-the value for the previous formula to get a new reference value of **45560**. It
-will be used as base to improve accuracy by increasing/decreasing this value and
-measuring the input voltage at the same time.
+After test on the received board, the measured voltage reference is **14400**,
+consistent with the theoretical value (< 0.5 % deviation). This value will be used
+as a base to improve accuracy by adjusting it while measuring the input voltage with
+a calibrated True RMS multimeter.
 
 #### Current reference
 
-**TO UPDATE**
+The current RMS is measured from IP/IN pins connected to a `SCT-013-050` current
+transformer clamp through a signal conditioning circuit.
 
-The current RMS is measured from IP/IN pins. Theses pins are connected to a current
-transformer clamp: SCT-013. We can find approximative voltage for a specific current
-measured on this [data sheet](https://uelectronics.com/wp-content/uploads/2019/04/SCT013-050-0-50A-0-1V.pdf).
+##### SCT-013-050 model
 
-Current | Voltage
-:------:|:------:
-50 A    | 2 V
-37.5 A  | 1.5 V
-25 A    | 1 V
-12.5 A  | 0.5 V
+The `SCT-013-050` is a voltage output clamp with a built-in burden resistor `Rb`.
+It is designed as a current source with the following characteristics:
 
-From the data sheet, the value of the internal register is compute with the following
-formula:
+Parameter       | Value
+----------------|-------------------------------
+Rated input     | 50 A RMS
+Rated output    | 1 V RMS
+Internal burden | Rb = ~37 Ohms
+Turns ratio     | N = 50 / (1V / 37 Ohms) = 1850
+Sensitivity     | 20 mV/A RMS
+
+The secondary current for a given primary current is:
 
 ```math
-I_{RMS} = \frac{305978 * I(mV)}{V_{ref}}
+I_s = \frac{I_{in}}{N} = \frac{I_{in}}{1850}
+```
+
+##### Signal conditioning circuit
+
+The IP/IN pins are connected as follows:
+
+- 1 Ohms (`R201`) in parallel with CT_K/CT_L (external burden)
+- 1 kOhms in series on each line (pin protection)
+
+`R201` forms a parallel combination with `Rb`, reducing the effective burden:
+
+```math
+R_{burden} = \frac{Rb \times R201}{Rb + R201} = \frac{37 \times 1}{37 + 1} = 0.974 Ω
+```
+
+The differential voltage on IP/IN for a given primary current is:
+
+```math
+U_{out} = \frac{I_{in}}{N} \times R_{burden} = \frac{I_{in}}{1850} \times 0.974
+```
+
+The BL0942 IP/IN full-scale is 30 mV RMS / 42 mV peak-to-peak. The operating
+points relative to full-scale are:
+
+Primary current | IP/IN voltage | % of full-scale
+:--------------:|:-------------:|:---------------:
+50 A            | 26 mV         | 90 %
+32 A            | 17 mV         | 57 %
+16 A            | 8 mV          | 27 %
+2 A             | 1 mV          | 3 %
+
+##### Current reference calculation
+
+From the datasheet, the internal register value is computed with the following formula:
+
+```math
+I_{RMS} = \frac{305978 \times U_{out}(mV)}{V_{ref}}
 ```
 
 ```math
 V_{ref} = 1.218 V
 ```
 
-With the previous values (expected current and chip voltage) we can estimated the
-current reference for the ESPHome configuration:
+With the previous values we can estimated the current reference for the ESPHome
+configuration:
 
 ```math
-Reference = \frac{I_{RMS}}{I_{in}}
+Reference = \frac{I_{RMS}}{I_{in}} = \frac{305978 \times R_{burden}}{V_{ref} \times N}
 ```
 
 ```math
-Reference = \frac{\frac{305978 * 1000}{1.218}}{25} = 10048538
+Reference = \frac{305978 \times 974}{1.218 \times 1850} = 132260
 ```
+
+After test on the received board, the measured current reference is **119500**,
+representing a ~10 % deviation from the theoretical value, consistent with the
+combined tolerances of `Rb` (10 %), `R201` (1 %), and the BL0942 internal reference.
+This value will be used as a base to improve accuracy by adjusting it while
+measuring the input current with a calibrated True RMS clamp meter.
 
 ### ESP32 Pinout
 
