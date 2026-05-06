@@ -10,7 +10,7 @@ Assistant by using [ESPHome](https://esphome.io) firmware.
 Custom software could be written by using ESP-IDF SDK but it is not the purpose
 of this project.
 
-![Board](img/board-v1.0.0.jpg)
+![Board](img/board-v1.1.0.jpg)
 
 ## Signals description
 
