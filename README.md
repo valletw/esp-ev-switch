@@ -84,6 +84,20 @@ the proximity signal.
 Note: This wiring could be adapted for tri-phase system and should be able
 to control the EVSE. The power measure can only be done on one phase.
 
+You can see my setup on a QUBEV wallbox. The clamp take some space and I had to
+put it on the input instead of the relay output because of the EV plug when I
+closed the enclosure.
+
+Also, the jack for the clamp broke when I installed the board, I was not careful
+enough. As it's not through hole connector, it break easily. I added glue and a wire
+as quick fix.
+
+Setup | Home Assistant
+:----:|:--------------:
+![Setup on QUBEV](img/setup-qubev.jpg) | ![Home Assistant Screenshot](img/homeassistant.jpg)
+
+Note: I limited my wallbox at 20A with an hardware switch inside.
+
 ### Components choice
 
 This project is based on an ESP32-C3 module to simplify design and ensure good
