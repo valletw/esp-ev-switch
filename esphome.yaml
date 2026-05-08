@@ -3,6 +3,7 @@ substitutions:
   entity_name: EV Switch
   voltage_ref: 14400
   current_ref: 111500
+  ev_delay_ms: 15000
 
 esphome:
   name: ${hostname}
@@ -142,7 +143,7 @@ script:
           condition:
             lambda: |
               return !id(ev_stop).is_running()
-                  && (millis() - id(last_toggle_time)) >= 30000;
+                  && (millis() - id(last_toggle_time)) >= ${ev_delay_ms};
           then:
             - lambda: id(last_toggle_time) = millis();
             - logger.log: "EV start"
@@ -168,7 +169,7 @@ script:
           condition:
             lambda: |
               return !id(ev_start).is_running()
-                  && (millis() - id(last_toggle_time)) >= 30000;
+                  && (millis() - id(last_toggle_time)) >= ${ev_delay_ms};
           then:
             - lambda: id(last_toggle_time) = millis();
             - logger.log: "EV stop"
